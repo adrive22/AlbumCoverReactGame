@@ -1,0 +1,21 @@
+.title{
+    width:100%;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    font-size: 100px;
+}
+
+.highscore{
+    float:right;
+    margin-right: 3%;
+    
+}
+
+.score{
+    margin-left:3%;
+    
+}
+
+.badge{
+    font-size:large;
+}
