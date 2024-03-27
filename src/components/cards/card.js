@@ -6,6 +6,8 @@ import cards from "./cards.css";
 const Card = props => {
     //console.log(props)
    return(
+    
+
        <div className="ultimateContainer">
        <div className="actualCard" onClick={() => props.clickCount(props.cardData.id)}>
         <div className="cardsContainer">
@@ -13,6 +15,7 @@ const Card = props => {
         </div>  
         </div>            
         </div> 
+    
    )
 }
 

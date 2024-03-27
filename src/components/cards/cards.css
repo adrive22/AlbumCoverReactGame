@@ -1,6 +1,7 @@
 .cardsContainer{
     width:80%;
     margin-left: 15%;
+    background-color: gray;
     
 }
 
@@ -11,3 +12,19 @@
     height:150px;
 }
 
+ @media (max-width: 480px){
+    
+    .cardsContainer{
+        width:100%;
+        margin-left: 5%;
+        display: "in-line"; 
+       
+    }
+.cardImages{
+    width:30%;
+    height:30%;
+    display: "in-line";
+    
+}
+
+}

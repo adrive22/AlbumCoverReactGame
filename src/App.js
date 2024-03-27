@@ -3,6 +3,7 @@ import Cards from "./components/cards/cards.js";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import cards from "./components/cards/cardImages.json";
+import "./index.css";
 
 
 class App extends Component{
@@ -52,7 +53,11 @@ class App extends Component{
     render(){
         return(
             <Wrapper>
+                
+                <br></br>
+                <br></br>
                <Header score={this.state.score} highscore={this.state.highscore}>Album Cover Art Shuffle Game</Header>
+               <br></br>
                 <Cards clickCount={this.clickCount}/>
             </Wrapper>
         )
