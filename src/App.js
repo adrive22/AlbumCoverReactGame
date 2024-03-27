@@ -31,18 +31,21 @@ class App extends Component{
         
         this.state.cards.sort(()=>Math.random()-.5);
 
-        this.setState({
-            score: this.state.score + 1,
-            usedIds : [...this.state.usedIds, id],
-        })
+        this.setState(
+            (prevState) => ({
+                score: prevState.score + 1,
+                usedIds: [...prevState.usedIds, id],
+              }),
+              () => {
+            
         if(this.state.highscore<this.state.score){
             this.setState({
-                highscore: this.state.score
-            })
-    }
+                highscore: this.state.score,
+            });
+            }
           }
-        
-        
+        )
+        }  
 
     };
 
